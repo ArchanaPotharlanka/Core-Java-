@@ -4,9 +4,9 @@ public class SecondLargest {
 
 	public static void main(String[] args) {
 		System.out.println("main method started ");
-		int numbers[] = { 10, 82, 32, 2, 5, 89, 85, 23, 52, 98, 99 };
-		int firstLargest = 0;
-		int secondLargest = 0;
+		int numbers[] = { 10, 98,82, 32, 2, 5, 89, 85, 23, 52,  99 };
+		int firstLargest = numbers[0];
+		int secondLargest = numbers[0];
 		for (int i = 0; i < numbers.length; i++) {
 			if (numbers[i] > firstLargest) {
 				firstLargest = numbers[i];
