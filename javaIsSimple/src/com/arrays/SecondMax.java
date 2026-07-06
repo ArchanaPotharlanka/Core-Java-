@@ -4,10 +4,10 @@ public class SecondMax {
 
 	public static void main(String[] args) {
 		System.out.println("Finding the second max ?");
-		int[] arr = { 8, 5, 9, 6, 3, 4, 8, 85, 69, 35, 65, 98 };
+		int[] arr = { 100, 108, 5, 9, 6, 3, 4, 8, 85, 69, 35, 65, 98 };
 		int firstMax = arr[0];
-		int secondMax = arr[0];
-		for (int i = 1; i < arr.length; i++) {
+		int secondMax = 0;// Integer.MIN_VALUE
+		for (int i = 0; i < arr.length; i++) {
 			if (arr[i] > firstMax) {
 				secondMax = firstMax;
 				firstMax = arr[i];
@@ -15,8 +15,8 @@ public class SecondMax {
 				secondMax = arr[i];
 			}
 		}
-		System.out.println("Maximum Element :" + firstMax);
-		System.out.println("Second maximum element :" + secondMax);
+		System.out.println(" Maximum Element :" + firstMax);
+		System.out.println(" Second maximum element :" + secondMax);
 
 	}
 

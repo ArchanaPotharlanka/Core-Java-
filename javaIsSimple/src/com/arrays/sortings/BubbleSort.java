@@ -9,6 +9,10 @@ public class BubbleSort {
 		int temp = 0;
 		int count = 0;
 		int count1 = 0;
+		System.out.println("Before Sorting :");
+		for (int i : arr) {
+			System.out.print(i + " ");
+		}
 
 		for (int i = 0; i < arr.length - 1; i++) {
 			boolean swapped = false;
@@ -26,9 +30,10 @@ public class BubbleSort {
 			}
 			count1++;
 		}
+		System.out.println();
 		System.out.println("Inner for loop iterations :" + count);
 		System.out.println("Outer for loop iterations :" + count1);
-		System.out.println("After Sorting");
+		System.out.println("After Sorting :");
 		for (int a : arr) {
 			System.out.print(a + " ");
 		}
