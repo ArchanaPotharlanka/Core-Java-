@@ -5,6 +5,7 @@ public class ThirdLargest {
 	public static void main(String[] args) {
 		System.out.println("main method started");
 		int[] arr = { 25, 42, 96, 36, 58, 74, 20, 12, 36, 49 };
+//		int[] arr= {10,20,30};
 		int firstLargest = arr[0];
 		int secondLargest = arr[0];
 		int thirdLargest = arr[0];
