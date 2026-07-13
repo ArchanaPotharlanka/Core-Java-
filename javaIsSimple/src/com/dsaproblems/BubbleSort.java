@@ -1,4 +1,4 @@
-package com.gut_tasks;
+package com.dsaproblems;
 
 public class BubbleSort {
 

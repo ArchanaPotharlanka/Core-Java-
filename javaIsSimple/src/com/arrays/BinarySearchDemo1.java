@@ -1,4 +1,4 @@
-package com.gut_tasks;
+package com.arrays;
 
 public class BinarySearchDemo1 {
 

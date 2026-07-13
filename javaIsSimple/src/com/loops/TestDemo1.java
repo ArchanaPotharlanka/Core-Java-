@@ -1,4 +1,4 @@
-package com.forloops;
+package com.loops;
 
 public class TestDemo1 {
 
