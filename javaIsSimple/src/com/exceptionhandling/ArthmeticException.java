@@ -16,7 +16,7 @@ public class ArthmeticException {
 			System.out.println(a / b);
 		} catch (ArithmeticException ae) {
 			
-			ae.printStackTrace();
+			ae.printStackTrace();                  
 			System.out.println(ae.getCause());
 			System.out.println(ae.getMessage());
 

@@ -17,7 +17,7 @@ public class FrequencyOfElements {
 			for (int j = 0; j < arr.length; j++) {
 				if (arr[i] == arr[j]) {
 					count++;
-					rep[j] = true;
+					rep[j] = true;	
 //					rep[j]=a;
 				}
 			}

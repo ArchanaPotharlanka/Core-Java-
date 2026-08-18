@@ -7,17 +7,17 @@ public class TicTacToe {
 	static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		char currentPlayer = 'x';
+		char currentPlayer = 'X';
 		while (true) {
 			printingBoard();
-			System.out.println(currentPlayer + " turn");
+			System.out.println("Player " + currentPlayer + "'s Turn");
 			System.out.println("Enter the row :");
 			int row = sc.nextInt();
 			System.out.println("Enter the column :");
 			int col = sc.nextInt();
 
 			if (row > 2 || col > 2 || row < 0 || col < 0) {
-				System.out.println("Invalid positions");
+				System.out.println("Invalid position! Please enter values between 0 and 2.");
 				continue;
 
 			} else {
@@ -29,16 +29,20 @@ public class TicTacToe {
 
 			}
 			if (checkWinner(currentPlayer)) {
+				printingBoard();
 				System.out.println(currentPlayer + " is winner ");
 				break;
 			}
 
 			if (isBoardFull()) {
-				System.out.println("Draw");
+				printingBoard();
+				System.out.println("The match ended in a draw!");
 				break;
 			}
-			currentPlayer = currentPlayer == 'x' ? 'o' : 'x';
+			currentPlayer = currentPlayer == 'X' ? 'O' : 'X';
 		}
+		sc.close();
+		System.out.println("Thank you for playing Tic Tac Toe!");
 
 	}
 
@@ -89,17 +93,23 @@ public class TicTacToe {
 	}
 
 	static void printingBoard() {
+
+		System.out.println();
+
 		for (int i = 0; i < 3; i++) {
-			System.out.print("---------");
-			System.out.println();
+
+			System.out.println("-------------");
+
 			for (int j = 0; j < 3; j++) {
-				System.out.print(board[i][j] + " |");
+
+				System.out.print("| " + board[i][j] + " ");
 
 			}
-			System.out.println();
 
+			System.out.println("|");
 		}
-		System.out.println("---------");
+
+		System.out.println("-------------");
 	}
 
 }
